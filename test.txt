@@ -1,1 +1,113 @@
 This is my first text file
+
+eyems@LAPTOP-8CTU3A0V MINGW64 ~
+$ cd
+
+eyems@LAPTOP-8CTU3A0V MINGW64 ~
+$ cd /c
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c
+$ ls
+'$GetCurrent'/              FFOutput/        'Program Files (x86)'/
+'$Recycle.Bin'/             FTUPDATESVC/      ProgramData/
+'$SysReset'/                hiberfil.sys      Recovery/
+ AdwCleaner/                hp/               swapfile.sys
+ AMD/                       OdinIntegrated/   SWSETUP/
+ autoexec.bat               OneDriveTemp/    'System Volume Information'/
+ Bitnami/                   pagefile.sys      SYSTEM.SAV/
+ Default.xml                PerfLogs/         Users/
+'Documents and Settings'@  'Program Files'/   Windows/
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c
+$ ..
+bash: ..: command not found
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c
+$ ls
+'$GetCurrent'/              FTUPDATESVC/            ProgramData/
+'$Recycle.Bin'/             Git/                    Recovery/
+'$SysReset'/                hiberfil.sys            swapfile.sys
+ AdwCleaner/                hp/                     SWSETUP/
+ AMD/                       OdinIntegrated/        'System Volume Information'/
+ autoexec.bat               OneDriveTemp/           SYSTEM.SAV/
+ Bitnami/                   pagefile.sys            Users/
+ Default.xml                PerfLogs/               Windows/
+'Documents and Settings'@  'Program Files'/
+ FFOutput/                 'Program Files (x86)'/
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c
+$ cd Git
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git
+$ ls
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git
+$ git config --global user.name "eyemsid"
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git
+$ git config --global user.email eyemsid@gmail.com
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git
+$ git clone https://github.com/eyemsid/testGit.git
+Cloning into 'testGit'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 590 bytes | 4.00 KiB/s, done.
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git
+$ ls
+testGit/
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git
+$ cd testGit
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ ls
+README.md
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ ls
+README.md  test.txt.txt
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ ls
+README.md  test.txt
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ git add test.txt
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ git commit -m "first commit" test.txt
+[master 96abeb7] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/eyemsid/testGit.git
+   bc62e3c..96abeb7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+eyems@LAPTOP-8CTU3A0V MINGW64 /c/Git/testGit (master)
+$
+------------------------NOW CHANGES IN TEST.TXT FILE----------------------
+--->>Do changes by opening test.txt file and then apply these commands-
+
+
